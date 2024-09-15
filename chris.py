@@ -1,0 +1,2 @@
+#Getiing inputs from user
+
