@@ -43,12 +43,16 @@ else:
 
 def raidCostFunction(a, b):
     return(math.floor(a/b))
+
 def intRaidCost (a, b):
     return(a/b)
+
 def totalRaidCost (a, b):
     return(abs(a-b))
+
 def multCost (a, b):
     return(a*b)
+
 def megaCost(a, b, c,):
     return(c-(a*b))
 initialRaidCost = raidCostFunction(newSelectedEntity, newSelectedExplosive)
@@ -67,11 +71,13 @@ if difRaidCost != 0 and selectedExplosive != "1" and newSelectedExplosive < newS
     difExploAmmo = megaCost(initialRaidCost, newSelectedExplosive, newSelectedEntity)
     exploOutput = multCost(difExploAmmo, Explo_Ammo_Damage)
     print("Your raid cost for a", entityType, "would be", initialRaidCost, explosiveType, "plus an additional", intRaidCost(difExploAmmo, 2), "explosive ammo" )
-elif selectedEntity == "1" and selectedExplosive == "1":
-    print("Your raid cost for a", entityType, "would be 19", explosiveType)
 elif selectedExplosive == "1":
     print("Your raid cost for a", entityType, "would be", round(actualRaidCost), explosiveType)
-elif selectedEntity == "1" and selectedExplosive == "2" or "3":
+elif selectedEntity == "1" and selectedExplosive == "1":
+    print("Your raid cost for a", entityType, "would be 19", explosiveType)
+elif selectedEntity == "1" and selectedExplosive == "3":
+    print("Your raid cost for a", entityType, "would be 1", explosiveType)
+elif selectedEntity == "1" and selectedExplosive == "2":
     print("Your raid cost for a", entityType, "would be 1", explosiveType)
 else:
     print("Your raid cost for a", entityType, "would be", initialRaidCost, explosiveType)
