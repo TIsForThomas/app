@@ -1,5 +1,19 @@
 from raid_values import *
 from entity_health import *
+<<<<<<< HEAD
+
+#Getting input from user
+
+User_wants = input("What kind of item are you looking to break: ")
+if User_wants = garageDoor Print yea
+User_how_many = input ("How many of this item do you need to break: ")
+User_raid_type = input ("What are you going to be raiding with: ")
+
+
+
+
+
+=======
 import math
 selectedEntity = input("Please select the the number that corresponds to the entity you are trying to break: 1=Wood Door, 2=Metal Door, 3=Garage Door, 4=Armored Door ")
 global newSelectedEntity
@@ -81,3 +95,4 @@ elif selectedEntity == "1" and selectedExplosive == "2":
     print("Your raid cost for a", entityType, "would be 1", explosiveType)
 else:
     print("Your raid cost for a", entityType, "would be", initialRaidCost, explosiveType)
+>>>>>>> 053d2ca034de443d1b61e61bd848ad460b6fccff
